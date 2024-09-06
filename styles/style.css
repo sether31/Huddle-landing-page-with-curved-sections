@@ -39,7 +39,7 @@
     --width: 1200px;
     --padding-inline: 2rem;
 
-    --padding-top: 6rem;
+    --padding-top: 12rem;
 }
 
 body{
@@ -112,14 +112,17 @@ main{
     flex-direction: column;
     gap: 2rem;
 
-    padding-top: var(--padding-top);
-    min-height: 100vh;
+    padding: var(--padding-top) var(--padding-inline) 3rem;
     text-align: center;
 } 
 
 .hero-section .hero-cta .hero-title{
     font-size: var(--fs-header);
     font-family: var(--ff-poppins);
+}
+
+.hero-section .hero-cta .hero-content{
+    width: 65%;
 }
 
 .hero-section .big-img{
@@ -150,22 +153,33 @@ main{
 }
 
 
+/* perks */
 
+.perks{
+    --margin-top: calc(var(--padding-top) + 4rem);
 
+    padding-top: var(--padding-top);
+}
 
+.perks :where(.grow-together, .flowing-conversations, .your-users){
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.perks :where(.flowing-conversations, .your-users){
+    margin-top: var(--margin-top);
+}
 
+.perks :where(.grow-together, .flowing-conversations, .your-users) .text-section,
+.perks :where(.grow-together, .flowing-conversations, .your-users) .img-section{
+    width: 40%;
+}
 
+.perks :where(.grow-together, .flowing-conversations, .your-users) .img-section img{
+    width: 100%;
+}
 
-
-
-
-
-/* 
-😭😭😭
-😤😤😤
-🥺💙
- */
 
 
 /* 
