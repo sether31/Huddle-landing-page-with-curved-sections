@@ -487,8 +487,5 @@ footer .container .footer-wrap article form input[type="email"]:invalid{
 
 
 
-
-
-/* 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); */
+.attribution { font-size: 11px; text-align: center; color:var(--very-dark-cyan)}
+.attribution a { color: hsl(228, 45%, 44%); }
